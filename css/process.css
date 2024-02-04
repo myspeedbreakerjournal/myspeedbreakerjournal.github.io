@@ -1,0 +1,586 @@
+/* Main settings*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+}
+
+body {
+    background-color: white;
+/*  background: rgb(249,244,233);*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    font-family: ChapeauMedium,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight:"light";
+    font-size:12px;
+    overflow:hidden;
+}
+
+p,li  {
+    margin-bottom:25px;
+    font-size: 17px;
+    line-height:120%;
+}
+
+li {
+    margin:0px;
+}
+
+#theory p{
+    margin-bottom: 100px;
+}
+
+
+::selection {
+  color: black;
+  background: rgba(255,0,0,0.2);
+}
+
+#theory a{
+/*font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;*/
+font-family:SuisseNeueLight,SuisseNeue-Regular,Times,serif;
+}
+
+#casestudies p,#casestudies h1,#casestudies h2,#casestudies h3,#casestudies li,#casestudies th,#casestudies td,#casestudies div, .quote{
+    font-weight:"light";    
+}
+
+
+
+/*Hoofdstukken*/
+h2 {
+    font-size: 3vw;
+    height:100%;
+    margin-top:30px;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.title h2{
+    margin-bottom: 20px;
+}
+
+.title-print{
+    display:none;
+}
+
+h3{
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*naam casestudies*/
+h4{
+    margin-bottom: 5vh;
+    text-align:center;
+    font-size:30px;
+}
+
+.quote {
+/*    font-size: 18px;*/
+    font-style:italic;
+    text-align: center;
+    margin: 1em;
+}
+
+
+
+.caption{
+    text-align: left;
+    margin-top: -5vh;
+    margin-bottom: 5vh;
+
+}
+
+#theory .caption{
+    margin-top: 0vh;
+}
+
+#theory .date{
+    margin-bottom: 0vh;
+}
+
+/*ordeblue list on line 197 theory*/
+ul,ol { 
+    margin-bottom: 5vh;
+}
+
+li {
+    padding-left:0;
+    margin-top: 10px;  
+}
+
+table{
+    margin-bottom: 5vh;
+}
+
+th {
+    text-align: left;
+}
+
+
+
+a, a:visited{
+    color:blue;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px solid blue;
+}
+
+
+
+img:hover, video:hover, iframe:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+#casestudies .date{
+    margin-top: -4vh;
+    font-size: 12px;
+    color:blue;
+    margin-bottom: -2vh;
+
+}
+
+#theory .date{
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom: 2px;
+    color:black;
+}
+
+
+
+/*CONTENT*/
+
+#wrapper_intro {
+    width: 90vw;
+    height:0vh;
+    padding-top: 2vh;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+} 
+
+.title h2{
+    margin-top:10px;
+    text-align: center; 
+    font-size:70px; 
+    padding-left:60px;
+    color:white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: blue;
+}
+
+#print-title{
+    display:none;
+}
+
+.cblueits{
+/*    color:blue;*/
+height:50px;
+    width:89vw;
+    float:left;
+    position:absolute;
+    text-align: left;
+    margin-top: 50px;
+    margin-left:20px;
+    z-index:3;
+}
+
+.print-cblueits{
+    display:none;
+}
+
+.cblueits-2{
+    width: 50%;
+    font-size:12px;
+    font-style:italic;
+    text-align:center;
+    margin: 0 auto;
+    margin-top:10vh;
+}
+
+#menu{
+    display:none;
+    z-index: 2;
+   /* background-color: blue;*/
+    width:100%;
+    float:left;
+}
+
+/*.abstract{
+    display:none;
+}*/
+
+.abstract-2{
+    margin-bottom: 60vh;
+}
+
+.abstract p{
+    padding-left: 40px;
+    padding-bottom: 20px;
+
+}
+
+.abstract h2, .abstract-2 h2{
+    margin-top:5vh;
+}
+
+.abstract-2 p{
+/*    border-bottom: 2px solid blue;*/
+}
+
+.abstract h2, .abstract-2 h2{
+    font-size:20vw;
+}
+
+/*.abstract:hover, .abstract-2:hover, .conclusion:hover{
+    color:blue;
+     -webkit-transition: all .4s ease-in-out; 
+}*/
+
+
+/*eflux*/
+
+.panels {
+    width:100vw;
+    height:95vh;
+    margin:0;
+    display: flex;
+    overflow: hidden;
+}
+
+.panel-container {
+
+    zoom: 1;
+    float: left;
+    height: 100%;
+    width:50vw;
+}
+
+.right-pane {
+    width:50vw;
+    flex: auto;
+
+}
+
+.left-pane {
+    width: 50vw;
+
+}
+
+.panel-label {
+    float: left;
+    width: 100%;
+    height:60px;
+    border-bottom: 2px solid blue;
+}
+
+#chapter{
+/*    background-color: white;*/
+    width:25vw;
+    margin:0 auto;
+
+}
+
+
+.panel-scrolling-container {
+    margin-left: 20px;
+    float: left;
+    height: 90vh;
+    width: 100%;
+    position:relative;
+    overflow-x:none;
+    overflow-y:auto;
+        z-index:0;
+    
+}
+
+.panel-scrolling-container img, video, iframe {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}   
+
+.print{
+    display:none;
+}
+
+.panel-scrolling-area {
+    height: 100%;
+   
+}
+
+
+.panel-items {
+/*    position: relative;*/
+    widows: 60%;
+    width: calc(100% - 50px);
+    margin-bottom: 400px;
+    margin-top: 20px;
+}
+
+
+
+/*splitter*/
+
+.panes-separator {
+    background-color: white;
+    width: 3vw;
+    height:105vh;
+    position: relative;
+    cursor: col-resize;
+    z-index:1;
+}
+
+.panes-separator h4{
+    font-size: 2vw;
+    width: 100vh;
+    position:relative;
+    bottom: 15vh; 
+    text-align: right;
+    padding-right: 15vh;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+     -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
+.panes-separator h4:hover{
+    color:blue;
+     -webkit-transition: all .4s ease-in-out; 
+}
+
+
+
+
+/*sources*/
+
+/*VIERKANTJES*/
+
+.circle {
+  position: relative;
+  display: inline-block;
+  margin-left:-1px;
+  margin-right: 1px;
+  height: 7px;
+  width: 7px;
+  border: 2px solid blue;
+  background-color: white;
+}
+
+.print-reference{
+    display:none;
+}
+
+
+/*tekst onderlijnd*/
+.reference{
+    position:relative;
+    border-bottom: 2px solid blue;
+}
+
+
+.circle:hover, .reference:hover{
+    cursor:pointer;
+
+}
+
+
+
+.circle .source, .reference .source{
+    visibility: hidden;
+    width: 200px;
+    font-size: 14px;
+    line-height:140%;
+    background-color: white;
+    color: blue;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;    
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.circle:hover .source, .reference:hover .source {
+    visibility: visible;
+    opacity: 1;
+}
+
+#myGlower {
+            transition: color 1s linear;
+}
+
+#myGlower.active {
+    color:blue;
+}
+
+@page{
+    size:A4;
+    margin-top: 25mm;
+}
+/*print*/
+
+@page main {
+    @top { content: string(chapter-title) }
+    @bottom {
+        content: counter(page)
+    }
+}
+
+@media print {
+
+    .chapter {
+  /*     page-break-before: always;*/
+       text-align: left;
+    }
+
+    .panel-container{
+        width:120mm;
+ /*       margin:10mm auto;*/
+    }
+
+    .panels{
+        height:100%;
+        width:150mm;
+        text-align: left;
+        display:table;
+        float:none;
+        margin-top:0mm;
+        margin-bottom:20mm;
+        margin-left:30mm;
+
+    }
+
+
+
+    .panel-scrolling-container{
+        height: 100%;
+        width:100%; 
+    }
+
+    .title{
+     
+              margin:0 auto;
+        margin-top: 50mm;
+        margin-bottom: 50mm;
+        color:white;
+
+    }
+
+    .cblueits{
+        display: none;
+    }
+
+    #web-title{
+        display:none;
+    }
+
+    #print-title{
+        display:block;
+    }
+
+    #print-title h2{
+        color:none;
+    }
+    #print-title h4{
+        display:block;
+    }
+    .panes-separator {
+        display:none;
+    }
+
+   /* div, p {
+       page-break-inside: avoid;
+    }*/
+
+    h2{
+        text-align: center;
+    }
+
+    .chapter{
+        text-align: center;
+    /*    margin-top: 6vh;*/
+        margin-bottom:3vh;
+    }
+
+
+   #chapter2, #chapter3, #chapter5, #chapter6, #chapter9, #casestudies, #case3, .case{
+        page-break-before:always;
+    }
+
+    #chapter1, #chapter4, #chapter7{
+        page-break-before: none;
+    }
+
+    .panel-scrolling-container{
+        page-break-before: always;
+    }
+
+    #conclusion-1{
+        page-break-before: none;
+        page-break-after: always;
+    }
+    .left-pane{
+        display:none;
+    }
+    img, video, iframe{
+        filter:none;
+    }
+
+    video, iframe{
+        display:none;
+    }
+    
+    .print-reference{
+        display:inline;
+        color:blue;
+        font-size: 10pt;
+    }
+
+    span{
+        color:black;
+    }
+
+    #cblueits-2-links{
+        display:none;
+    }
+
+    .abstract-2{
+    margin-bottom: 0vh;
+    }
+
+    .panel-items{
+        margin-bottom: 2vh;
+    }
+
+    .cblueits-2{
+        width:70%;
+    }
+
+
+}

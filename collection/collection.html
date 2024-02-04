@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Harvesting Expectations</title>
+	<link rel="stylesheet" type="text/css" href="css/roti.css">
+
+	<script type="text/javascript" src="js/sound-mouseover.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jump.js">
+	</script> -->
+	<script type="text/javascript" src="js/float.js"></script>
+
+
+
+</head>
+<body>
+	
+	<div class="menu">
+		<div id="menu-item">
+			<a onmouseover="playclip();" href="work.html"><h1>WORK</h1></a>	
+		</div>
+
+		<div id="menu-item">
+			<a href="info.html"><h1>INFO</h1></a>	
+		</div>
+
+		<div id="menu-item">
+			<a href="contact.html" ><h1>CONTACT</h1></a>	
+		</div>
+
+		<div id="menu-item">
+			<a href="doosje.html" ><h1>MORE...</h1></a>	
+		</div>
+	</div>
+		
+
+
+
+	<div class="footer">
+		<a href="gieter.html"><img src="images/zwaai.gif" alt=""></a>
+	</div>
+	
+
+	<div id="sounddiv">
+		<audio>
+			<source src="sound/sound-1.m4a"></source>
+		</audio>
+	</div>
+
+
+
+   <div class="float" style="z-index:100">
+   	<img src="images/airmaxiron.png" alt="">
+
+    </div>
+
+</body>
+
+	<script>
+		$('html, body').animate({ scrollTop: $(document).height() - $(window).height() }, 1000, function() {
+    	$(this).animate({ scrollTop: 0 }, 1000);});
+	</script>
+</html>
+
+
+
+
